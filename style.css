@@ -1,0 +1,46 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: white;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a:hover {
+    color: lightblue;
+}
+
+h1 {
+    margin: 20px;
+}
+
+p, ul {
+    margin: 20px;
+}
+
+img {
+    margin: 20px;
+    border: 2px solid black;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #eee;
+    text-align: center;
+}
