@@ -1,0 +1,40 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  background: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: lightblue;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+table {
+  border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
