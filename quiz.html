@@ -1,45 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Quiz</title>
-<link rel="stylesheet" href="style.css">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="topic1.html">Binary</a></li>
-<li><a href="topic2.html">CPU</a></li>
-<li><a href="concepts.html">Concepts</a></li>
-<li><a href="quiz.html" class="active">Quiz</a></li>
-<li><a href="references.html">References</a></li>
-<li><a href="about.html">About</a></li>
-</ul>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="topic1.html">Binary</a></li>
+    <li><a href="topic2.html">CPU</a></li>
+    <li><a href="concepts.html">Concepts</a></li>
+    <li><a href="quiz.html" class="active">Quiz</a></li>
+    <li><a href="references.html">References</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
 </nav>
 
 <div class="container">
 
-<h1>Quiz</h1>
+<h1>Computer Fundamentals Quiz</h1>
 
-<form>
-<p>CPU stands for:</p>
-<input type="radio" name="q1" value="correct"> Central Processing Unit<br>
-<input type="radio" name="q1"> Computer Unit<br>
+<p>Test your understanding of binary, the CPU, and key computing concepts. Select your answers and click submit to see your results.</p>
 
-<p>Binary uses what numbers?</p>
-<input type="text" id="q2">
+<form id="quizForm">
 
-<button type="button" onclick="checkQuiz()">Submit</button>
+<div class="question">
+  <h2>1. What does CPU stand for?</h2>
+  <label><input type="radio" name="q1" value="correct"> Central Processing Unit</label><br>
+  <label><input type="radio" name="q1" value="wrong"> Computer Processing Unit</label><br>
+  <label><input type="radio" name="q1" value="wrong"> Central Program Unit</label>
+</div>
+
+<div class="question">
+  <h2>2. Binary uses which numbers?</h2>
+  <input type="text" id="q2" placeholder="Enter your answer">
+</div>
+
+<div class="question">
+  <h2>3. Which are input devices? (Select all)</h2>
+  <label><input type="checkbox" name="q3" value="keyboard"> Keyboard</label><br>
+  <label><input type="checkbox" name="q3" value="mouse"> Mouse</label><br>
+  <label><input type="checkbox" name="q3" value="monitor"> Monitor</label>
+</div>
+
+<div class="question">
+  <h2>4. What is the main function of the CPU?</h2>
+  <label><input type="radio" name="q4" value="correct"> Execute instructions</label><br>
+  <label><input type="radio" name="q4" value="wrong"> Store files</label><br>
+  <label><input type="radio" name="q4" value="wrong"> Display images</label>
+</div>
+
+<div class="question">
+  <h2>5. What is an algorithm?</h2>
+  <label><input type="radio" name="q5" value="correct"> A step-by-step solution</label><br>
+  <label><input type="radio" name="q5" value="wrong"> A type of hardware</label><br>
+  <label><input type="radio" name="q5" value="wrong"> A storage device</label>
+</div>
+
+<button type="button" onclick="checkQuiz()">Submit Quiz</button>
+<button type="reset">Reset</button>
+
 </form>
 
-<p id="result"></p>
-
-<script src="script.js"></script>
+<h2 id="score"></h2>
+<div id="feedback"></div>
 
 </div>
 
-<footer><p>This is a class project for IT 3203</p></footer>
+<footer>
+  <p>This is a class project for IT 3203</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
