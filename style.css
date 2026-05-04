@@ -90,8 +90,7 @@ ul {
 
 /* ===== IMAGES ===== */
 img {
-  width: 100%;
-  max-width: 400px; /* controls size */
+  max-width: 350px;   /* controls size */
   height: auto;
   display: block;
   margin: 20px auto;
