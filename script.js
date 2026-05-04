@@ -7,5 +7,6 @@ function checkQuiz() {
   let q2 = document.getElementById("q2").value;
   if (q2 === "0 and 1") score++;
 
-  document.getElementById("result").innerHTML = "Score: " + score;
+  document.getElementById("result").innerHTML =
+    "Score: " + score;
 }
